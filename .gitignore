@@ -1,0 +1,6 @@
+# compiled build
+dist/
+# Dependency directories
+node_modules/
+# optional npm cache directory
+.npm
