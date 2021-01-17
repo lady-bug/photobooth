@@ -17,9 +17,20 @@ module.exports = {
   module: {
     rules: [
       {
+        enforce: "pre",
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader",
+        loader: "eslint-loader",
+        options: {
+          emitWarning: true,
+          failOnError: false,
+          failOnWarning: false
+        }
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "babel-loader"
       },
       {
         // Loads the javacript into html template provided.
@@ -27,7 +38,7 @@ module.exports = {
         test: /\.html$/,
         use: [
           {
-            loader: "html-loader",
+            loader: "html-loader"
             //options: { minimize: true }
           }
         ]
