@@ -6,5 +6,5 @@ npm run buildProd
 => to build the app
 
 npm start
-=> to start he server
+=> to start the server
 http://localhost:8080/
