@@ -11,3 +11,9 @@ npm run reInstall
 npm start
 => to start the server
 http://localhost:8080/
+
+npm test
+=> js unit testing
+
+npm run coverage
+=> get a coverage report
