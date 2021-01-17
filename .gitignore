@@ -4,3 +4,6 @@ dist/
 node_modules/
 # optional npm cache directory
 .npm
+# others
+package-lock.json
+.DS_Store
